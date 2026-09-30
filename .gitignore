@@ -13,3 +13,7 @@ build/
 轨迹/
 录屏/
 视频/
+
+# 劳保鞋系统运行时数据（由 run.sh / seed 重新生成）
+safety_shoes/data/*
+!safety_shoes/data/.gitkeep
