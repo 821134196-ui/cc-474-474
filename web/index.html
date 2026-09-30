@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>劳保鞋发放与到期换领系统</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="mark">S3</span>劳保鞋发放换领系统</div>
+  <nav id="nav">
+    <button data-tab="dash" class="active">总览</button>
+    <button data-tab="employees">员工档案</button>
+    <button data-tab="inventory">库存矩阵</button>
+    <button data-tab="due">到期队列</button>
+    <button data-tab="renewals">损坏 / 换领审核</button>
+    <button data-tab="returns">旧鞋处置</button>
+  </nav>
+  <div class="role-switch">
+    <span>当前操作人</span>
+    <select id="actorRole">
+      <option value="keeper">仓管·刘库</option>
+      <option value="supervisor">主管·陈厂</option>
+      <option value="admin">管理员</option>
+    </select>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+<div class="toast-wrap" id="toasts"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
